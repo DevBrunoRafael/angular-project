@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from './services/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -8,22 +9,40 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-project';
 
-  numeroGerado?: number;
-  readonly Status = Status;
-  currentStatus: Status = Status.CANCELADO;
+  // AULA OBSERVABLES
 
-  handleClick(numero: number) {
-    this.numeroGerado = numero;
+  showCart: boolean = false;
+
+  constructor(protected readonly cartService: CartService) {}
+
+  toggleShowCart() {
+    this.showCart = !this.showCart;
   }
 
-  changeStatus(event: Event) {
-    const value = (event.target as HTMLSelectElement).value;
-    this.currentStatus = value as Status;
+  addProduct(event: Event) {
+    const element = (event.target as HTMLInputElement);
+    this.cartService.addProductInCar({ name: element.value });
+    element.value = "";
   }
 
-  clearNumber() {
-    this.numeroGerado = undefined;
-  }
+  // AULA DIRETIVAS
+
+  // numeroGerado?: number;
+  // readonly Status = Status;
+  // currentStatus: Status = Status.CANCELADO;
+
+  // handleClick(numero: number) {
+  //   this.numeroGerado = numero;
+  // }
+
+  // changeStatus(event: Event) {
+  //   const value = (event.target as HTMLSelectElement).value;
+  //   this.currentStatus = value as Status;
+  // }
+
+  // clearNumber() {
+  //   this.numeroGerado = undefined;
+  // }
 }
 
 export enum Status {
