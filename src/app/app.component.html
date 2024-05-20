@@ -1,18 +1,38 @@
-<div class="bg-[#333333] w-screen h-screen flex items-center justify-center">
-  <div class="bg-white size-[30rem] rounded-xl p-6">
+
+<div class="w-screen h-screen flex">
+  <nav class="bg-white h-screen w-[15rem]">
+    <ul class="flex p-4 flex-col divide-y pt-44">
+      <li class="cursor-pointer p-5">
+        <a routerLink="/produtos/listar">Listagem de produtos</a>
+      </li>
+      <li class="cursor-pointer p-5">
+        <a routerLink="/produtos/criar">Form de produtos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="flex-1 p-10 bg-[#ccc] ">
+    <div class="p-6 rounded-md shadow-2xl bg-white ">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
+
+<!-- <div class="bg-[#333333] w-screen h-screen flex items-center justify-center">
+  <div class="bg-white size-[30rem] rounded-xl p-6"> -->
 
     <!-- aula observables -->
-    <input
+    <!-- <input
       class="border border-gray-500 px-5 py-2 rounded-md w-full mb-10"
       type="text" name="produto" placeholder="Informe o nome do produto"
       (keyup.enter)="addProduct($event)"
-    />
+    /> -->
 
-    <app-button text="Exibir ou esconder o carrinho" color="bg-red-500" (onClick)="toggleShowCart()" />
+    <!-- <app-button text="Exibir ou esconder o carrinho" color="bg-red-500" (onClick)="toggleShowCart()" />
 
     <ng-container *ngIf="showCart">
       <app-cart></app-cart>
-    </ng-container>
+    </ng-container> -->
 
     <!-- aula diretivas -->
 
@@ -55,7 +75,7 @@
       </div>
     </ng-container> -->
 
-  </div>
-</div>
+  <!-- </div>
+</div> -->
 
 

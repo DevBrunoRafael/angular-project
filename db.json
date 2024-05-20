@@ -1,0 +1,136 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone X100",
+      "description": "Um smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera tripla.",
+      "price": 2500.00,
+      "discount": 15,
+      "imageId": 1,
+      "category": "ELETRONICOS"
+    },
+    {
+      "id": 2,
+      "name": "Notebook Pro",
+      "description": "Notebook com processador i7, 16GB de RAM, 512GB SSD e tela de 15 polegadas.",
+      "price": 6000.00,
+      "discount": 20,
+      "imageId": 2,
+      "category": "COMPUTADORES"
+    },
+    {
+      "id": 3,
+      "name": "Fone de Ouvido Bluetooth",
+      "description": "Fone de ouvido sem fio com cancelamento de ruído e até 20 horas de duração da bateria.",
+      "price": 500.00,
+      "discount": 10,
+      "imageId": 3,
+      "category": "AUDIO"
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch Fit",
+      "description": "Relógio inteligente com monitoramento de atividades físicas, frequência cardíaca e notificações.",
+      "price": 800.00,
+      "discount": 25,
+      "imageId": 4,
+      "category": "ACESSORIOS"
+    },
+    {
+      "id": 5,
+      "name": "Câmera DSLR",
+      "description": "Câmera profissional DSLR com lente 18-55mm, resolução de 24MP e gravação de vídeo em 4K.",
+      "price": 3500.00,
+      "discount": 30,
+      "imageId": 5,
+      "category": "FOTOGRAFIA"
+    },
+    {
+      "id": 6,
+      "name": "Tablet Z8",
+      "description": "Tablet com tela de 10 polegadas, 64GB de armazenamento e suporte para caneta stylus.",
+      "price": 1800.00,
+      "discount": 10,
+      "imageId": 6,
+      "category": "ELETRONICOS"
+    },
+    {
+      "id": 7,
+      "name": "Smart TV 4K",
+      "description": "Televisão smart de 55 polegadas com resolução 4K, HDR e sistema operacional integrado.",
+      "price": 4000.00,
+      "discount": 35,
+      "imageId": 7,
+      "category": "ELETRONICOS"
+    },
+    {
+      "id": 8,
+      "name": "Console de Videogame",
+      "description": "Console de videogame de última geração com 1TB de armazenamento e gráficos 4K.",
+      "price": 3000.00,
+      "discount": 20,
+      "imageId": 8,
+      "category": "JOGOS"
+    },
+    {
+      "id": 9,
+      "name": "Caixa de Som Bluetooth",
+      "description": "Caixa de som portátil com conexão Bluetooth, à prova d'água e bateria de longa duração.",
+      "price": 700.00,
+      "discount": 15,
+      "imageId": 9,
+      "category": "AUDIO"
+    },
+    {
+      "id": 10,
+      "name": "Câmera de Segurança",
+      "description": "Câmera de segurança Wi-Fi com visão noturna, detecção de movimento e gravação em nuvem.",
+      "price": 600.00,
+      "discount": 40,
+      "imageId": 10,
+      "category": "SEGURANCA"
+    }
+  ],
+  "S3": [
+    {
+      "id": 1,
+      "imageUrl": "https://a-static.mlcdn.com.br/800x560/vivo-x100-pro-5g-dimensity-9300-16gb-512gb-1tb-camera-zeiss-dual-sim/intecstorebrt/65486465562/837b1e830986b8d03ff4d6d51f328715.jpeg"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/notebook-asus-vivobook-15-intel-core-i5-16gb-ram-512gb-156-full-hd-keepos-x1502za-bq1808/magazineluiza/237245500/174f247c68e6f15829d03c04447ca044.jpg"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/fone-bluetooth-e6s-tws-sem-fio-para-celular-notebook/amillymulti/a6s/8f2cb9283d11e7795a588920552b711d.jpeg"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/smartwatch-samsung-galaxy-fit3-display-1-6/samsung/5999/067077c39092b435652a7315c518b97e.jpeg"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/camera-ip-wifi-externa-2-antenas-prova-d-agua-ip66-hd-orbitronic/clicamundo/481-473/df7e92fffcaeffac7789f888111e80e6.jpeg"
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/tablet-samsung-galaxy-tab-s9-512gb-12gb-ram-tela-imersiva-de-12-4/samsung/4926/10451bba546ca2e0d989c8d39d595319.jpeg"
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/smart-tv-55-4k-uhd-oled-evo-lg-oled55c3-120hz-wi-fi-bluetooth-alexa-4-hdmi-g-sync-freesync/magazineluiza/237452500/41c157b00e7a7f719ad1b120221a6c66.jpg"
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/video-game-console-portatil-asus-rog-ally-de-7-fhd-16-512gb-com-wi-fi-bluetooth/estacaodainformatica/d4be7eb499dc11ee95624201ac185040/d1dde30f6d0d9a6b7460ad1697636eeb.jpeg"
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/caixa-de-som-original-kapbom-caixinha-de-som-bluetooth-portatil-potente-pen-drive-ka-8001/jldasilva/da86c59858c011eeab3c4201ac185056/a0119bec35e74b8b5a7fe5dbde4ca4a3.jpeg"
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://a-static.mlcdn.com.br/280x210/camera-seguranca-dupla-lente-2x-3mp-externa-wi-fi-ip-reduz-ponto-cego-icsee/andrianistore/camwifidupl/2e558cc509b549e6aa0ec176129294a3.jpeg"
+    }
+  ]
+}
