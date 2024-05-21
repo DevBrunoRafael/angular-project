@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { CartService } from './shared/services/cart.service';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +16,12 @@ export class AppComponent {
 
   showCart: boolean = false;
 
-  constructor(protected readonly cartService: CartService) {}
+  constructor(
+    protected readonly cartService: CartService,
+    protected readonly iconLibrary: FaIconLibrary
+  ) {
+    iconLibrary.addIconPacks(fas, far);
+  }
 
   toggleShowCart() {
     this.showCart = !this.showCart;

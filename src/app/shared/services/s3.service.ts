@@ -13,6 +13,6 @@ export class S3Service {
   constructor(private readonly http: HttpClient) { }
 
   findImageByImageId(imageId: number): Observable<IproductImage> {
-    return this.http.get<IproductImage>(`${this.url}`);
+    return this.http.get<IproductImage>(`${this.url}/${imageId}`);
   }
 }

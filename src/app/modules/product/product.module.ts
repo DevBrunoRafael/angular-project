@@ -5,6 +5,7 @@ import { ProductRoutingModule } from './product-routing.module';
 import { ProductComponent } from './product.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { FormProductComponent } from './form-product/form-product.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormProductComponent } from './form-product/form-product.component';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class ProductModule { }

@@ -1,7 +1,8 @@
 
 <div class="w-screen h-screen flex">
-  <nav class="bg-white h-screen w-[15rem]">
-    <ul class="flex p-4 flex-col divide-y pt-44">
+  <nav class="bg-white h-screen w-[18rem]">
+    <img src="assets/logo-banner.jpg" alt="">
+    <ul class="flex p-4 flex-col divide-y divide-[#EB6136]">
       <li class="cursor-pointer p-5">
         <a routerLink="/produtos/listar">Listagem de produtos</a>
       </li>
@@ -11,8 +12,8 @@
     </ul>
   </nav>
 
-  <main class="flex-1 p-10 bg-[#ccc] ">
-    <div class="p-6 rounded-md shadow-2xl bg-white ">
+  <main class="flex-1 p-10 bg-[#ccc] overflow-y-auto">
+    <div class="p-6 rounded-md shadow-2xl bg-white">
       <router-outlet></router-outlet>
     </div>
   </main>
