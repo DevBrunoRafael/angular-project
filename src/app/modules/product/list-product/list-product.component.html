@@ -18,8 +18,12 @@
     </div>
 
     <div class="flex gap-5 items-center">
-      <fa-icon icon="pen" class="text-blue-700" />
-      <fa-icon icon="trash" class="text-red-700" />
+      <button (click)="navigateToFormEdit(product)">
+        <fa-icon icon="pen" class="text-blue-700" />
+      </button>
+      <button>
+        <fa-icon icon="trash" class="text-red-700" />
+      </button>
     </div>
   </div>
 

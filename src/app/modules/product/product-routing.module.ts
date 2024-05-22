@@ -18,8 +18,12 @@ const routes: Routes = [
         component: FormProductComponent
       },
       {
-        path: "**",
-        redirectTo: "listar",
+        path: "editar/:productId",
+        component: FormProductComponent
+      },
+      {
+        path: "",
+        redirectTo: "criar",
         pathMatch: "full"
       }
     ]

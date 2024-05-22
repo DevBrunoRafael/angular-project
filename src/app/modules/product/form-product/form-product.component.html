@@ -1,1 +1,51 @@
-<p>form-product works!</p>
+<form #form="ngForm" (submit)="onSubmit()">
+
+  <div class="grid grid-cols-3 gap-5">
+    <div class="col-span-1">
+      <label for="name">Nome</label>
+      <input id="name" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="text" name="name" placeholder="Digite..." [(ngModel)]="productForm.name"/>
+    </div>
+
+    <div class="col-span-2">
+      <label for="description">Descrição</label>
+      <input id="description" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="text" name="description" placeholder="Digite..." [(ngModel)]="productForm.description"/>
+    </div>
+
+    <div>
+      <label for="price">Preço</label>
+      <input id="price" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="number" name="price" placeholder="Digite..." [(ngModel)]="productForm.price"/>
+    </div>
+
+    <div>
+      <label for="discount">Desconto</label>
+      <input id="discount" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="number" name="discount" placeholder="Digite..." [(ngModel)]="productForm.discount"/>
+    </div>
+
+    <div>
+      <label for="category">Categoria</label>
+      <select
+        class="border border-gray-500 px-5 py-2 rounded-md w-full"
+        id="category" name="category" id="category" [(ngModel)]="productForm.category"
+      >
+        <option [value]="undefined">Selecione...</option>
+        <ng-container *ngFor="let category of CategoryEnum | keyvalue">
+          <option [value]="category.value">{{ category.key }}</option>
+        </ng-container>
+      </select>
+    </div>
+
+    <div>
+      <label for="url">Url da imagem</label>
+      <input id="url" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="text" name="name" placeholder="Digite..." [(ngModel)]="imageForm.imageUrl"/>
+    </div>
+
+    <div class="col-span-full flex justify-end">
+      <button type="submit" class="bg-green-600 rounded-md px-3 py-1.5 text-white font-medium">
+        Cadastrar
+      </button>
+    </div>
+  </div>
+
+</form>
+
+

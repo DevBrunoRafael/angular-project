@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IProductDto } from '../models/interfaces/product-dto';
+import { ProductForm } from '../models/forms/product-form';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +21,8 @@ export class ProductService {
     return this.http.get<IProductDto[]>(`${this.url}/${productId}`);
   }
 
-  registerProduct(form: any): Observable<void> {
-    return this.http.post<void>(`${this.url}`, form);
+  registerProduct(form: ProductForm): Observable<IProductDto> {
+    return this.http.post<IProductDto>(`${this.url}`, form);
   }
 
   updateProduct(form: any, productId: number): Observable<void> {
