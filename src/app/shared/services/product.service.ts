@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IProductDto } from '../models/interfaces/product-dto';
 import { ProductForm } from '../models/forms/product-form';
+import { FormProductComponent } from 'src/app/modules/product/form-product/form-product.component';
 
 @Injectable({
   providedIn: 'root'
@@ -17,15 +18,15 @@ export class ProductService {
     return this.http.get<IProductDto[]>(`${this.url}`);
   }
 
-  fetchProductById(productId: number): Observable<IProductDto[]> {
-    return this.http.get<IProductDto[]>(`${this.url}/${productId}`);
+  fetchProductById(productId: number): Observable<IProductDto> {
+    return this.http.get<IProductDto>(`${this.url}/${productId}`);
   }
 
   registerProduct(form: ProductForm): Observable<IProductDto> {
     return this.http.post<IProductDto>(`${this.url}`, form);
   }
 
-  updateProduct(form: any, productId: number): Observable<void> {
+  updateProduct(form: ProductForm, productId: number): Observable<void> {
     return this.http.put<void>(`${this.url}/${productId}`, form);
   }
 

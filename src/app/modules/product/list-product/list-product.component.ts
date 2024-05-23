@@ -24,6 +24,7 @@ export class ListProductComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+
     this.productService.fetchAllProducts().pipe(
 
       // tap(value => console.log(value)),
@@ -62,7 +63,11 @@ export class ListProductComponent implements OnInit {
   }
 
   navigateToFormEdit(product: IProductDto) {
-    this.router.navigate(["produtos/editar", product.id])
+    this.router.navigate(["produtos/editar", product.id], {
+      queryParams: {
+        productName: "nome produto",
+      }
+    })
   }
 
 }

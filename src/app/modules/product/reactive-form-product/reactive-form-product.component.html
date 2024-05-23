@@ -1,0 +1,27 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+
+  <div class="grid grid-cols-3 gap-5">
+    <div class="col-span-1">
+      <label for="name">Nome</label>
+      <input id="name" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="text" name="name" placeholder="Digite..." formControlName="name"/>
+    </div>
+
+    <div>
+      <label for="price">Preço</label>
+      <input id="price" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="number" name="price" placeholder="Digite..." formControlName="price"/>
+    </div>
+
+    <div class="col-span-full flex justify-end">
+      <button type="submit" class="bg-green-600 rounded-md px-3 py-1.5 text-white font-medium">
+        Cadastrar
+      </button>
+    </div>
+  </div>
+</form>
+
+<pre>
+  {{ form.value | json }}
+</pre>
+
+
+

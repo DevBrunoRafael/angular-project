@@ -6,20 +6,25 @@ import { ProductComponent } from './product.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { FormProductComponent } from './form-product/form-product.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormProductComponent } from './reactive-form-product/reactive-form-product.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
   declarations: [
     ProductComponent,
     ListProductComponent,
-    FormProductComponent
+    FormProductComponent,
+    ReactiveFormProductComponent
   ],
   imports: [
     CommonModule,
     ProductRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class ProductModule { }

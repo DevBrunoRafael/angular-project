@@ -1,9 +1,11 @@
+<button (click)="authService.login()">Add item in storage</button>
+
 <form #form="ngForm" (submit)="onSubmit()">
 
   <div class="grid grid-cols-3 gap-5">
     <div class="col-span-1">
       <label for="name">Nome</label>
-      <input id="name" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="text" name="name" placeholder="Digite..." [(ngModel)]="productForm.name"/>
+      <input id="name" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="text" name="name" placeholder="Digite..." required max="10" [(ngModel)]="productForm.name"/>
     </div>
 
     <div class="col-span-2">
@@ -17,8 +19,8 @@
     </div>
 
     <div>
-      <label for="discount">Desconto</label>
-      <input id="discount" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="number" name="discount" placeholder="Digite..." [(ngModel)]="productForm.discount"/>
+      <label appColorpicker for="discount">Desconto</label>
+      <input appColorpicker id="discount" class="border border-gray-500 px-5 py-2 rounded-md w-full" type="number" name="discount" placeholder="Digite..." [(ngModel)]="productForm.discount"/>
     </div>
 
     <div>

@@ -2,12 +2,12 @@
   "products": [
     {
       "id": "1",
-      "name": "Smartphone X100",
-      "description": "Um smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera tripla.",
+      "category": "ELETRONICOS",
       "price": 2500,
       "discount": 15,
       "imageId": 1,
-      "category": "ELETRONICOS"
+      "description": "Um smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera tripla.",
+      "name": "Smartphone X200"
     },
     {
       "id": "2",
